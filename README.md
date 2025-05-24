@@ -5,14 +5,10 @@ A Python tool for collecting and processing galaxy data from the Sloan Digital S
 ## Features
 
 - Query SDSS DR16 for galaxy data with customizable filters
-- Download high-quality galaxy images in multiple bands (g, r, i)
-- Process images with advanced techniques for machine learning
-- Create augmented versions of galaxy images
+- Download high-quality galaxy images
+- Create augmented versions of galaxy images (needs improvement - center shiting only)
 - Save comprehensive metadata for each galaxy
 - Built-in rate limiting to respect SDSS API constraints
-- Create color-magnitude diagrams
-- Grid visualization of multiple galaxies
-- Support for known galaxies catalog
 
 ## Prerequisites
 
