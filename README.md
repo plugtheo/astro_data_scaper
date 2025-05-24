@@ -6,7 +6,7 @@ A Python tool for collecting and processing galaxy data from the Sloan Digital S
 
 - Query SDSS DR16 for galaxy data with customizable filters
 - Download high-quality galaxy images
-- Create augmented versions of galaxy images (needs improvement - center shiting only)
+- Create augmented versions of galaxy images (needs improvement - center shifting only)
 - Save comprehensive metadata for each galaxy
 - Built-in rate limiting to respect SDSS API constraints
 
