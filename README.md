@@ -68,7 +68,7 @@ collector.save_galaxy_metadata(metadata, metadata_path)
 ## Project Structure
 
 ```
-sdss-galaxy-collector/
+astro_data_scaper/
 ├── src/
 │   ├── galaxy_data_collector.py
 │   └── main.py
