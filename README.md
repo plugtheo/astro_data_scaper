@@ -49,17 +49,20 @@ from galaxy_data_collector import GalaxyDataCollector
 # Initialize the collector
 collector = GalaxyDataCollector(output_dir="data")
 
-# Get a sample of galaxies
-galaxies = collector.query_galaxies(limit=16)
+# Process galaxies from CSV file
+# Get the root directory (one level up from src)
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+csv_file = os.path.join(root_dir, "data", "YOUR_CSV_FILE.csv")
+galaxies = collector.process_galaxy_coordinates(csv_file, limit=None)
 
-# Get their images
-image_paths = collector.get_galaxy_images(galaxies)
-
-# Create a color-magnitude diagram
-collector.create_color_magnitude_diagram(
-    galaxies,
-    save_path="data/images/color_magnitude.jpg"
+# Download multiple SDSS images per galaxy with augmentation
+metadata = collector.get_sdss_cutout_images_augmented(
+    galaxies, n_versions=3, shift_arcsec=1.0, width=256, height=256
 )
+
+# Save metadata for images
+metadata_path = os.path.join(collector.output_dir, "galaxy_metadata.json")
+collector.save_galaxy_metadata(metadata, metadata_path)
 ```
 
 ## Project Structure
