@@ -1,4 +1,4 @@
-# SDSS Galaxy Data Collector
+# Astro Data Collector
 
 A Python tool for collecting and processing galaxy data from the Sloan Digital Sky Survey (SDSS) Data Release 16. This tool is designed for astronomers and machine learning researchers working with galaxy data.
 
