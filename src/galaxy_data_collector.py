@@ -1,5 +1,4 @@
 """
-Galaxy Data Collector for SDSS (Sloan Digital Sky Survey)
 This module provides functionality to collect and process galaxy data from SDSS DR16.
 """
 import json
